@@ -1,0 +1,54 @@
+# URLs de Prueba para el Gestor de Descargas
+# ============================================
+
+# URLs para pruebas de funcionalidad (archivos pequeños - rápidos)
+# ------------------------------------------------------------------
+
+# Archivo de 1KB (para pruebas rápidas)
+https://httpbin.org/bytes/1024
+
+# Archivo de 10KB 
+https://httpbin.org/bytes/10240
+
+# Archivo de 100KB
+https://httpbin.org/bytes/102400
+
+# URLs de archivos reales para pruebas (archivos más grandes ≥50MB)
+# -------------------------------------------------------------------
+
+# Ubuntu ISO (≈4GB) - ADVERTENCIA: Archivo muy grande
+# https://releases.ubuntu.com/22.04/ubuntu-22.04.3-desktop-amd64.iso
+
+# Ejemplos de archivos medianos para prueba (verificar disponibilidad)
+# https://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4
+
+# Archivo de muestra del W3C (pequeño)
+https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf
+
+# JSON de ejemplo para pruebas
+https://jsonplaceholder.typicode.com/posts
+
+# Imagen de ejemplo (pequeña)
+https://via.placeholder.com/1920x1080/0000FF/FFFFFF?text=Test+Image
+
+# HASHES DE EJEMPLO PARA VERIFICACIÓN
+# ====================================
+# Para el archivo de 1KB de httpbin.org/bytes/1024, el hash SHA-256 cambia en cada descarga
+# porque genera datos aleatorios.
+
+# Para archivos estáticos, puedes calcular el hash así:
+# 1. Descarga el archivo una vez
+# 2. Usa: certutil -hashfile archivo.ext SHA256
+# 3. Usa ese hash en el campo de verificación
+
+# INSTRUCCIONES DE USO:
+# 1. Copia cualquiera de estas URLs
+# 2. Pégala en el campo URL de la aplicación
+# 3. Opcionalmente, proporciona un hash SHA-256 conocido
+# 4. Haz clic en "Agregar Descarga"
+
+# PRUEBAS RECOMENDADAS:
+# 1. Descarga 3 archivos simultáneamente
+# 2. Cancela una descarga en progreso
+# 3. Verifica integridad con hash conocido
+# 4. Revisa los logs en la carpeta logs/
